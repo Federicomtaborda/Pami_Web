@@ -1,0 +1,160 @@
+/*!
+ * Start Bootstrap - Blog Home (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+ /* Animaciones */
+
+.contenedor{
+
+ 	margin-right: 50px;
+ 	margin-left: 50px;
+ }
+
+.observado{
+
+ 	margin-right: 10px;
+ }
+
+
+.bot-derechos{
+
+	float: right;
+	margin: 8px;
+}
+
+
+.tramite{
+
+	font-size: 11px;
+	text-align: center;
+	background-color: #EAF2F8;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #F7F9F9;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+
+}
+
+footer {
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+footer p {
+
+	text-align: center;
+	font-size: 12px;
+}
+
+div .well{
+	margin-top: 80px;
+}
+div .tabla {
+	margin: 20px 0;
+
+}
+div .tabla tfoot {
+	color: #85929E;
+
+}
+
+div .botones{
+	width: auto;
+	height: auto;
+	margin: 15px 0;
+	background-color: #EAF2F8;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+
+div .navbar-header >a{
+font-size: 18px;
+
+}
+
+div .navbar-header span{
+font-size: 24px;
+font-weight: bold;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+
+margin-top: 4.3px;
+
+}
+
+th.boton{
+	width: 10px;
+}
+
+tr td{
+	font-size: 12px;
+}
+tr{
+	font-size: 12px;
+}
+
+.alerta{
+	text-align: center;
+
+}
+ .alerta span {
+	color: #ea5653;
+
+	font-size: 15px;
+	}
+.conf{
+	text-align: center;
+}
+.conf span {
+	color: #239b56;
+	
+	font-size: 15px;
+	}
+.list-unstyled li{
+
+	margin-top: 7px;
+}
+h3 span{
+color: #1abc9c;
+}
+
+
+	
