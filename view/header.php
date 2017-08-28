@@ -60,13 +60,7 @@
                             <li><a href="?c=moeit&a=cronograma">Cronograma AGOSTO Pa|Os</a></li>
                             <li>
                             <li><a href="?c=moeit&a=capacitacion">Capacitación én atención MOEIT</a></li>
-                            <li>
-                                <a href="?c=moeit&a=encuesta">Encuesta Interna</a>
-                            </li>
-                            <li><a href="http://10.11.30.21/pami/moeit_documentos.html" target="_blank">Form. y Documentación</a>
-                            <li><a href="?c=moeit&a=ingresar">Datos de Atención</a></li>
-                            <li>
-                        
+                            <li><a href="http://10.11.30.21/pami/moeit_documentos.html" target="_blank">Form. y Documentación</a>                    
                             <li>
                                 <a href="?c=moeit&a=tramites">Medicamentos</a>
                             </li>

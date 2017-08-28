@@ -1,36 +1,12 @@
-<div class="wrapper wrapper-content animated fadeInRight">
-
-    <div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-10">
-        <h2>Páginas</h2>
-        <ol class="breadcrumb">
-            <li>
-                <a href="?c=inicio">Inicio</a>
-            </li>
-            <li class="active">
-                <strong>Discapacidad</strong>
-            </li>
-        </ol>
-    </div>
- </div>
-
-
-<div class="wrapper wrapper-content animated fadeInRight">
-    <div class="ibox-content text-center p-md">
-
-        <h2 class="text-success">Seguimiento de Afiliados con Discapacidad.</h2>
-
-        <h4 class="text-mutud">Digitalización de la Documentación.</h4>
-                 
+<br><div class="ibox-content text-center p-md">
+        <h2 class="text-success">Seguimiento de Afiliados con Discapacidad.</h2>   
+        <p>Digitalización de Certificados</p>              
     </div><br>
-
-    
-           
-	 <div class="row">
-      <div class="col-md-12">
+   
+	
        <div class="ibox-content">
-        <div id="cantidad" style="float:right" class="text-success"></div>
-        <a href="?c=moeit&a=Crud"><button class="btn btn-success dim" type="button"> + <i class="fa fa-user"></i> </button></a>
+          <div id="cantidad" style="float:right" class="text-success"></div>
+          <a href="?c=moeit&a=Crud"><button class="btn btn-success dim" type="button"> + <i class="fa fa-user"></i> </button></a>
 
             <form method="post">
             	<div class="input-group input-group-lg">
@@ -44,24 +20,32 @@
                 </div>
             </form> 
         </div>
-     </div>    
-            
+    
     <div class="row">
 
-     <div class="container-fluid">
+     <div class="container">
 
-      <div class="col-md-12">
-        <br>
-              <div id="app-body">
+            <div id="app-body">
+
+                  <div class="ultimos"><br>
+                      <center>
+                          <h3 id="titulo"></h3>
+                      </center> 
+                  </div>  
+
                 <div class="ibox-content">
+                     
                   <div class="tv-shows">
+                      
                       <div class="loader">
                            <center>
-                              <img src="view/Moeit/disca/cargando.gif"
-                                   class="img-responsive"
-                                   alt="cangando.." width="250px" height="250px" >
+                              <h2 class="text-danger">
+                                  <i class="fa fa-refresh"></i>
+                                  Cargando Datos...
+                              </h2>
                            </center>
                       </div>
+
                      <div class="no_existe error" style="margin-top:20px;">
                         <div class="alert alert-danger">
                            <h2>
@@ -71,22 +55,21 @@
                            </h2>
                         </div>
                      </div>
+
                    </div>
+
                 </div>
-              </div>
+
+            </div>
                
-      </div>
+        </div>
             
       </div>
-    </div> 
 
 
-  </div> 
- 
-</div>
 
 
-            
+           
 
 
    <!-- Mainly scripts -->

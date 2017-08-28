@@ -9,13 +9,12 @@ $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 switch ($_GET["op"]) {
 
 	case 'listar':
-		sleep(1);
 		try {
 	$stmt = $db->prepare("SELECT
 	discapacidad.id,
 	lower(discapacidad.apellido_nombre) as apellido_nombre,
 	discapacidad.certificado,
-	DATE_FORMAT(discapacidad.fecha,'%d-%m-%Y') as fecha
+	DATE_FORMAT(discapacidad.fecha,'%d.%m.%Y') as fecha
 	FROM
 	discapacidad ORDER BY apellido_nombre ASC");
 	$stmt->execute();
@@ -56,9 +55,46 @@ switch ($_GET["op"]) {
 }
 
 		break;
-}
+
+	break;
+	
+	case 'ultimos':
 
 
+		try {
+	$stmt = $db->prepare("SELECT
+			discapacidad.id,
+			LOWER(discapacidad.apellido_nombre) as apellido_nombre,
+			discapacidad.certificado,
+			DATE_FORMAT(discapacidad.fecha,'%d/%m/%Y  %h:%mhs') as fecha
+			FROM
+			discapacidad
+			ORDER BY
+			discapacidad.fecha DESC
+			LIMIT 4");
+	$stmt->execute();
+	$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	if( $rows ){
+
+		$respuesta = array(
+			'error' => false,
+			'user' => $rows 
+		);
+
+			echo json_encode( $respuesta );
+	}
+	
+	} catch(PDOException $ex) {
+
+	    echo $ex->getMessage();
+	    exit;
+	}
+
+		break;
+
+
+}//fin swicht
 
 
 

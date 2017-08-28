@@ -29,11 +29,6 @@ class MoeitController{
         }
     }
 
-    
-
-   
-
-
     public function Guardar(){
         $alm = new Moeit();
       
@@ -75,12 +70,6 @@ class MoeitController{
         
     }
     
-    public function ingresar(){
-        require_once 'view/header.php';
-        require_once 'view/moeit/moeit.php';
-        require_once 'view/footer.php';
-    }
-
     public function capacitacion(){
         require_once 'view/header.php';
         require_once 'view/moeit/capacitacion_moeit.php';

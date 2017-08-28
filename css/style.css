@@ -6,6 +6,17 @@
  *   version 2.4
  *
 */
+
+.caja{
+  background-color: #eafaf1 ; 
+}
+
+  li small {
+
+    font-size: 10px;
+  } 
+
+
 .capitalize{
   text-transform: capitalize;
 }

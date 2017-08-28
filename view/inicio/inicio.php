@@ -274,7 +274,7 @@
 
                                     <a href="?c=moeit&a=ostomia" type="button" class="btn btn-outline btn-success btn-md"> <i class="fa fa-search"></i> Ostomia (SISFARM)</a> 
                                     <a href="?c=moeit&a=calculo" target="_blank" type="button" class="btn btn-outline btn-success btn-md"> <i class="fa fa-calculator"></i> Calculo 5 % Medicamentos</a>
-                                    <a href="?c=moeit&a=disca" type="button" class="btn btn-outline btn-success btn-md"> <i class="fa fa-file-pdf-o"></i> Discapacidad <small><strong class="text-danger">+320 </strong></small></a>                     
+                                    <a href="?c=moeit&a=disca" type="button" class="btn btn-outline btn-success btn-md"> <i class="fa fa-file-pdf-o"></i> Discapacidad <small><strong class="text-danger">+360</strong></small></a>                     
                                     <a href="?c=sociales&a=tramite" type="button" class="btn btn-outline btn-success btn-md" target="_blank"> <i class="fa fa-child"></i> SS Med. Autorizados </a>
                                     <a href="?c=seguimiento&a=seguimiento" type="button" class="btn btn-outline btn-success btn-md" target="_blank"> <i class="fa fa-exchange" aria-hidden="true"></i>
                                      Seguimiento de Tramite <small><strong class="text-danger">Nuevo</strong></small></a>

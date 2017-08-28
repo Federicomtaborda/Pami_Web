@@ -1,4 +1,5 @@
 $(function() {
+
   
   var $tvShowsContainer = $('#app-body').find('.tv-shows');
   $('.no_existe').hide();
@@ -37,9 +38,9 @@ $(function() {
 
             if (shows == "vacio") {
                $('.no_existe').show();
+
                 }else{
                $('.no_existe').hide();
-            $tvShowsContainer.find('.loader').hide();
                renderShows(JSON.parse(shows));
           }
         })
@@ -69,6 +70,49 @@ $(function() {
         renderShows(JSON.parse(shows));
         
       })
+
+      function listar_ultimos(){
+
+    $.ajax({
+      type: 'GET',
+      url : 'view/Moeit/disca/disca_ajax.php?op=ultimos',
+      dataType: 'json'
+    })
+    .done(function( data ){
+
+      console.log(data);
+
+      data.user.forEach(function(users,index) {
+
+        var content ="";
+
+
+        content+='<div class="col-lg-3">';
+
+        content+='<ul class="list-group caja">';
+        content+='<li class="list-group-item">';
+        content+='<a  href="archivos/discapacidad/'+users.certificado+'" class="capitalize">'+users.apellido_nombre+'</a>';
+        content+='<br>';
+        content+='<small> '+users.fecha+' </small>';
+        content+='</li>';
+        content+='</ul>';
+        content+='</div>';
+
+        $(".ultimos").append( content );
+        
+      }); 
+
+      $('#titulo').html('<h3 class="text-success">Ultimos Certificados Cargados</h3>');
+
+  
+    })
+    .fail(function(){
+      console.log("Fallo!");
+    })
+
+  }//fin listar_todos
+
+  listar_ultimos();
  
   
 })
